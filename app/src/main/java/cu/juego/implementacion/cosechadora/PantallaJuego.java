@@ -6,6 +6,7 @@ import java.util.TimerTask;
 
 import android.content.Context;
 import android.graphics.Color;
+import android.media.MediaPlayer;
 import android.util.Log;
 import android.widget.Toast;
 import cu.juego.implementacion.Graficos;
@@ -15,6 +16,7 @@ import cu.juego.implementacion.Pixmap;
 import cu.juego.implementacion.Input.TouchEvent;
 
 public class PantallaJuego extends Pantalla {
+	MediaPlayer mp;
 
 	enum EstadoJuego {
 		Preparado, Ejecutandose, Over, FinJuego
@@ -26,6 +28,12 @@ public class PantallaJuego extends Pantalla {
 	public PantallaJuego(Juego juego) {
 		super(juego);
 		mundo = new Mundo();
+
+		if(Configuraciones.soundEnabled){
+			mp = MediaPlayer.create(juego.getContext(), R.raw.musica);
+			mp.setLooping(true);
+			mp.setVolume(Configuraciones.musicLevel, Configuraciones.musicLevel);
+		}
 
 	}
 
@@ -89,7 +97,7 @@ public class PantallaJuego extends Pantalla {
 					if (event.x > 260) {
 						if (event.y < 60) {
 							if (Configuraciones.soundEnabled) {
-								Assets.clic.play(1);
+								Assets.clic.play(Configuraciones.soundLevel);
 							}
 							mundo = new Mundo();
 							estado = EstadoJuego.Preparado;
@@ -152,7 +160,7 @@ public class PantallaJuego extends Pantalla {
 			if (event.type == TouchEvent.TOUCH_UP) {
 				if (event.y > 0 && event.y <= 480) {
 					if (Configuraciones.soundEnabled) {
-						Assets.clic.play(1);
+						Assets.clic.play(Configuraciones.soundLevel);
 					}
 					mundo = new Mundo();
 					estado = EstadoJuego.Preparado;
@@ -202,7 +210,7 @@ public class PantallaJuego extends Pantalla {
 			}
 			juego.setScreen(new MainMenuScreen(juego));
 			if (Configuraciones.soundEnabled) {
-				Assets.clic.play(1);
+				Assets.clic.play(Configuraciones.soundLevel);
 			}
 		} else {
 
@@ -570,19 +578,27 @@ public class PantallaJuego extends Pantalla {
 			// Configuraciones.addScore(mundo.puntuacion);
 			Configuraciones.saved(juego.getFileIO());
 		}
+		if(Configuraciones.soundEnabled){
+			mp.pause();
+		}
 
 	}
 
 	@Override
 	public void resume() {
 		// TODO Auto-generated method stub
+		if(Configuraciones.soundEnabled){
+			mp.start();
+		}
 
 	}
 
 	@Override
 	public void dispose() {
 		// TODO Auto-generated method stub
-
+		if(Configuraciones.soundEnabled){
+			mp.stop();
+		}
 	}
 
 }

@@ -63,7 +63,7 @@ public class SplashNew extends Activity {
 		
 		
 		if (Configuraciones.soundEnabled) {
-			Assets.felicidades.play(1);
+			Assets.felicidades.play(Configuraciones.soundLevel);
 		}
 
 		TimerTask task = new TimerTask() {

@@ -24,6 +24,8 @@ public class Configuraciones {
 	public static SharedPreferences miPrefer;
 	public static ArrayList<Integer> lisP;
 
+	public static float musicLevel = (float)0.3;
+	public static float soundLevel = (float)0.2;
 	public static boolean soundEnabled = true;
 	public static boolean[] ganado = new boolean[] { false, false, false, false, false, false, false, false, false };
 	public static int[] niveles = new int[] { 4, 4, 4, 4, 4, 4, 4, 4, 4 };

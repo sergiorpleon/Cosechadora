@@ -33,7 +33,7 @@ public class MainMenuScreen extends Pantalla {
 			 juego.close();
 
 			 if (Configuraciones.soundEnabled) {
-			 Assets.clic.play(1);
+			 Assets.clic.play(Configuraciones.soundLevel);
 			 }
 		} else {
 
@@ -44,14 +44,14 @@ public class MainMenuScreen extends Pantalla {
 					if (inBounds(event, 0, g.getHeight() - 64, 64, 64)) {
 						Configuraciones.soundEnabled = !Configuraciones.soundEnabled;
 						if (Configuraciones.soundEnabled) {
-							Assets.clic.play(1);
+							Assets.clic.play(Configuraciones.soundLevel);
 						}
 					}
 
 					if (inBounds(event, 64, 220, 192, 42)) {
 						juego.setScreen(new PantallaJuego(juego));
 						if (Configuraciones.soundEnabled) {
-							Assets.clic.play(1);
+							Assets.clic.play(Configuraciones.soundLevel);
 						}
 						return;
 					}
@@ -60,7 +60,7 @@ public class MainMenuScreen extends Pantalla {
 					if (inBounds(event, 64, 220 + 84, 192, 42)) {
 						juego.setScreen(new PantallaMaximasPuntuaciones(juego));
 						if (Configuraciones.soundEnabled) {
-							Assets.clic.play(1);
+							Assets.clic.play(Configuraciones.soundLevel);
 						}
 						return;
 					}
@@ -69,7 +69,7 @@ public class MainMenuScreen extends Pantalla {
 					if (inBounds(event, 64, 220 + 168, 192, 42)) {
 						juego.setScreen(new PantallaAyuda(juego));
 						if (Configuraciones.soundEnabled) {
-							Assets.clic.play(1);
+							Assets.clic.play(Configuraciones.soundLevel);
 						}
 						return;
 					}

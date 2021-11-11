@@ -258,7 +258,7 @@ public class VentanaNiveles extends Activity {
 		// if (Control.nivel <= Configuraciones.descubierto) {
 
 		if (Configuraciones.soundEnabled) {
-			clic1.play(1);
+			clic1.play(Configuraciones.soundLevel);
 		}
 		Log.d("son", "ok");
 

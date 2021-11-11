@@ -56,7 +56,7 @@ String[] lines = new String[5];
 			}
 			juego.setScreen(new MainMenuScreen(juego));
 			if(Configuraciones.soundEnabled){
-				Assets.clic.play(1);
+				Assets.clic.play(Configuraciones.soundLevel);
 			}
 		}else{
 		
@@ -68,7 +68,7 @@ String[] lines = new String[5];
 			if(event.x < 84 && event.y > 400){
 				juego.setScreen(new MainMenuScreen(juego));
 				if(Configuraciones.soundEnabled){
-					Assets.clic.play(1);
+					Assets.clic.play(Configuraciones.soundLevel);
 				}
 			}
 			}

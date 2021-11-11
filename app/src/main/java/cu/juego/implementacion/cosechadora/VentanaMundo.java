@@ -137,7 +137,7 @@ public class VentanaMundo extends Activity {
 		if (Configuraciones.mundo <= Configuraciones.descubierto) {
 
 			if (Configuraciones.soundEnabled) {
-				clic1.play(1);
+				clic1.play(Configuraciones.soundLevel);
 			}
 			Log.d("son", "ok");
 			Configuraciones.guardar();

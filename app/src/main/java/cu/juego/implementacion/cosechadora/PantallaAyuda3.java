@@ -25,7 +25,7 @@ public class PantallaAyuda3 extends Pantalla {
 			}
 			juego.setScreen(new MainMenuScreen(juego));
 			if (Configuraciones.soundEnabled) {
-				Assets.clic.play(1);
+				Assets.clic.play(Configuraciones.soundLevel);
 			}
 		} else {
 			int len = touchEvents.size();
@@ -36,7 +36,7 @@ public class PantallaAyuda3 extends Pantalla {
 					if (event.x > 236 && event.y > 400) {
 						juego.setScreen(new MainMenuScreen(juego));
 						if (Configuraciones.soundEnabled) {
-							Assets.clic.play(1);
+							Assets.clic.play(Configuraciones.soundLevel);
 						}
 					}
 					if (event.x > 20 && event.x < 196) {

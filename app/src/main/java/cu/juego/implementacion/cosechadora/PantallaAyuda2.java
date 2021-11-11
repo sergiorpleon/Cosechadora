@@ -26,7 +26,7 @@ public class PantallaAyuda2 extends Pantalla {
 			}
 			juego.setScreen(new MainMenuScreen(juego));
 			if (Configuraciones.soundEnabled) {
-				Assets.clic.play(1);
+				Assets.clic.play(Configuraciones.soundLevel);
 			}
 		} else {
 
@@ -38,7 +38,7 @@ public class PantallaAyuda2 extends Pantalla {
 					if (event.x > 236 && event.y > 400) {
 						juego.setScreen(new PantallaAyuda3(juego));
 						if (Configuraciones.soundEnabled) {
-							Assets.clic.play(1);
+							Assets.clic.play(Configuraciones.soundLevel);
 						}
 					}
 					
