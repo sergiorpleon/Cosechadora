@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Cosechadora</string>
+    <string name="autor">Sergio Ramón Pérez León 2016</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+	<string name="nuevo_nivel">¡YOU WIN!</string>
+	<string name="ganador">¡FELICIDADES!</string>
+	<string name="explicacion0">Explicaión del Juego Cosechadora</string>
+    <string name="explicacion1">El objetivo del juego es limpiar el campo de caña.</string>
+    <string name="explicacion2">Inicialmente se presentan 3 cosechadoras, usted debe seleccionar la cosechadora que limpie el campo de caña.</string>
+    
+    <string name="explicacion3">La cosechadora se mueve horizontal de izquierda a derecha y vertical de arriba abajo.</string>
+    <string name="explicacion4">La cosechadora se moverá en el sentido que le indique siempre y cuando haya caña y solo parará de moverse en ese sentido cuando no haya caña.</string>
+    <string name="explicacion5">Para mover la cosechadora hacia la derecha o hacia la izquierda debes mover el dedo sobre la pantalla en ese sentido.</string>
+    <string name="explicacion6">Para mover la cosechadora hacia arriba o hacia abajo debes mover el dedo sobre la pantalla en ese sentido.</string>
+   	
+   	<string name="explicacion7">Si limpias el campo con la cosechadora correcta sin selecicionar antes otra obtendras 3 estrellas.</string>
+   	<string name="explicacion8">Si pruebas con 1 cosechadora incorrecta pierdes 1 estrella.</string>
+   	<string name="explicacion9">Si pruebas con 2 cosechadora incorrecta pierdes 2 estrella.</string>
+   	<string name="explicacion10">Si obtienes más de 22 estrellas en un campo se desbloqueara el próximo campo.</string>
+   	
+   	<string name="explicacion11">El árbol es un obstáculo que frena la cosechadora asi como también la frena zonas limpias de caña.</string>
+   	<string name="explicacion12">La cañas oscuras indican que la cosechadora debe pasar dos veses por esa zona para que sea limpiada.</string>
+   	<string name="explicacion13">Las garzas frenan el movimiento de la cosechadora una única vez.</string>
+   	
+   	<string name="explicacion15">Read</string>
+   	
+   	<string name="level">level</string>
+   
+    
+</resources>

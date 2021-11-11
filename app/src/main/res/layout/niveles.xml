@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/fondojuego"
+    android:orientation="vertical" >
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:id="@+id/tablero"
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_margin="10dp"
+                android:gravity="center" >
+
+                <TableLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:weightSum="4" >
+
+                    <TableRow
+                        android:id="@+id/tableRow0"
+                        style="@style/tableRow" >
+
+                        <FrameLayout
+                            android:id="@+id/frame9"
+                            style="@style/frame" >
+
+                            <ImageButton
+                                android:id="@+id/button9"
+                                style="@style/button"
+                                android:text="9" >
+                            </ImageButton>
+
+                            <ImageButton
+                                android:id="@+id/numero9"
+                                style="@style/numero"
+                                android:background="@drawable/land" >
+                            </ImageButton>
+                        </FrameLayout>
+
+                        <FrameLayout
+                            android:id="@+id/frame10"
+                            style="@style/frame" >
+
+                            <ImageButton
+                                android:id="@+id/button10"
+                                style="@style/button"
+                                android:text="10" >
+                            </ImageButton>
+
+                            <ImageButton
+                                android:id="@+id/numero10"
+                                style="@style/numero"
+                                android:background="@drawable/libre" >
+                            </ImageButton>
+                        </FrameLayout>
+
+                        <FrameLayout
+                            android:id="@+id/frame11"
+                            style="@style/frame"
+                            android:layout_margin="0dp" >
+
+                            <ImageButton
+                                android:id="@+id/buttonsound"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="top|right"
+                                android:background="@drawable/reset"
+                                android:onClick="reset" >
+                            </ImageButton>
+                        </FrameLayout>
+                    </TableRow>
+
+                    <TableRow
+                        android:id="@+id/tableRow1"
+                        style="@style/tableRow" >
+
+                        <FrameLayout
+                            android:id="@+id/frame0"
+                            style="@style/frame" >
+
+                            <ImageButton
+                                android:id="@+id/button0"
+                                style="@style/button"
+                                android:text="0" >
+                            </ImageButton>
+
+                            <ImageButton
+                                android:id="@+id/numero0"
+                                style="@style/numero"
+                                android:background="@drawable/n1" >
+                            </ImageButton>
+                        </FrameLayout>
+
+                        <FrameLayout
+                            android:id="@+id/frame1"
+                            style="@style/frame" >
+
+                            <ImageButton
+                                android:id="@+id/button1"
+                                style="@style/button"
+                                android:text="1" >
+                            </ImageButton>
+
+                            <ImageButton
+                                android:id="@+id/numero1"
+                                style="@style/numero"
+                                android:background="@drawable/n2" >
+                            </ImageButton>
+                        </FrameLayout>
+
+                        <FrameLayout
+                            android:id="@+id/frame2"
+                            style="@style/frame" >
+
+                            <ImageButton
+                                android:id="@+id/button2"
+                                style="@style/button"
+                                android:text="2" >
+                            </ImageButton>
+
+                            <ImageButton
+                                android:id="@+id/numero2"
+                                style="@style/numero"
+                                android:background="@drawable/n3" >
+                            </ImageButton>
+                        </FrameLayout>
+                    </TableRow>
+
+                    <TableRow
+                        android:id="@+id/tableRow2"
+                        style="@style/tableRow" >
+
+                        <FrameLayout
+                            android:id="@+id/frame3"
+                            style="@style/frame" >
+
+                            <ImageButton
+                                android:id="@+id/button3"
+                                style="@style/button"
+                                android:text="3" />
+
+                            <ImageButton
+                                android:id="@+id/numero3"
+                                style="@style/numero"
+                                android:background="@drawable/n4" />
+                        </FrameLayout>
+
+                        <FrameLayout
+                            android:id="@+id/frame4"
+                            style="@style/frame" >
+
+                            <ImageButton
+                                android:id="@+id/button4"
+                                style="@style/button"
+                                android:text="4" />
+
+                            <ImageButton
+                                android:id="@+id/numero4"
+                                style="@style/numero"
+                                android:background="@drawable/n5" />
+                        </FrameLayout>
+
+                        <FrameLayout
+                            android:id="@+id/frame5"
+                            style="@style/frame" >
+
+                            <ImageButton
+                                android:id="@+id/button5"
+                                style="@style/button"
+                                android:text="5" >
+                            </ImageButton>
+
+                            <ImageButton
+                                android:id="@+id/numero5"
+                                style="@style/numero"
+                                android:background="@drawable/n6" >
+                            </ImageButton>
+                        </FrameLayout>
+                    </TableRow>
+
+                    <TableRow
+                        android:id="@+id/tableRow3"
+                        style="@style/tableRow" >
+
+                        <FrameLayout
+                            android:id="@+id/frame6"
+                            style="@style/frame" >
+
+                            <ImageButton
+                                android:id="@+id/button6"
+                                style="@style/button"
+                                android:text="6" />
+
+                            <ImageButton
+                                android:id="@+id/numero6"
+                                style="@style/numero"
+                                android:background="@drawable/n7" />
+                        </FrameLayout>
+
+                        <FrameLayout
+                            android:id="@+id/frame7"
+                            style="@style/frame" >
+
+                            <ImageButton
+                                android:id="@+id/button7"
+                                style="@style/button"
+                                android:text="7" />
+
+                            <ImageButton
+                                android:id="@+id/numero7"
+                                style="@style/numero"
+                                android:background="@drawable/n8" />
+                        </FrameLayout>
+
+                        <FrameLayout
+                            android:id="@+id/frame8"
+                            style="@style/frame" >
+
+                            <ImageButton
+                                android:id="@+id/button8"
+                                style="@style/button"
+                                android:text="8" />
+
+                            <ImageButton
+                                android:id="@+id/numero8"
+                                style="@style/numero"
+                                android:background="@drawable/n9" />
+                        </FrameLayout>
+                    </TableRow>
+                </TableLayout>
+            </LinearLayout>
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone" >
+            </ImageButton>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

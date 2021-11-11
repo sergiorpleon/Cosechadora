@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/LayoutGeneral"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:background="@drawable/fondopremio"
+    android:scaleType="fitXY"
+    android:weightSum="5" >
+
+    <LinearLayout
+        android:id="@+id/LayoutMsrco"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/LayoutLogo1"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:id="@+id/numeroX"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:adjustViewBounds="true"
+                android:cropToPadding="false"
+                android:background="@drawable/logo"
+                android:scaleType="fitCenter"
+                />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="4"
+        android:orientation="vertical"
+         >
+
+        <TextView
+            android:id="@+id/mensaje"
+            style="@style/style_General"
+            android:textSize="44sp"
+            android:text="@string/nuevo_nivel" />
+    </LinearLayout>
+
+</LinearLayout>
