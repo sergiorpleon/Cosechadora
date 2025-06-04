@@ -1,2 +1,2 @@
 # Cosechadora
-Game
+Juego tipo puzzle desarrollado en Eclipse para dispositivos Android.
